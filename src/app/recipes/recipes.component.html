@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-md-5">
+    <app-recipe-list></app-recipe-list>
+    <!-- (recipeWasSelected)="selectedRecipe = $event" -->
+    
+    </div>
+
+
+    <div class="col-md-7">
+<!-- 
+    <app-recipe-detail  
+    *ngIf="selectedRecipe; else infoText"
+    [recipe]="selectedRecipe"></app-recipe-detail>
+    
+    <ng-template #infoText>
+        <p>Please Select a Recipe</p>
+
+    </ng-template> -->
+
+    <!-- While Performing the Child Routs -->
+    <router-outlet></router-outlet>
+    </div>
+</div>
+
